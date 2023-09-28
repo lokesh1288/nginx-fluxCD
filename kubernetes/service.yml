@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: spring-boot-hello
-  namespace: springboot
+  name: flux
+  namespace: flux
 spec:
   type: LoadBalancer
   selector:
-    app: spring-boot-hello
+    app: flux
   ports:
     - name: http
       protocol: TCP
